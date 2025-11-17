@@ -1,0 +1,4 @@
+product_id,name,category,brand,price,stock_quantity
+sku-1001,Wireless Mouse,Accessories,LogiTech,44.25,120
+sku-1002,Mechanical Keyboard,Accessories,KeyPro,59.99,80
+sku-1003,27in Monitor,Monitors,ViewMax,199.0,30

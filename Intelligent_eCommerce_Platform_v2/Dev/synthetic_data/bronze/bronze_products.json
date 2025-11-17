@@ -1,0 +1,26 @@
+[
+  {
+    "product_id": "sku-1001",
+    "name": "Wireless Mouse",
+    "category": "Accessories",
+    "brand": "LogiTech",
+    "price": 44.25,
+    "stock_quantity": 120
+  },
+  {
+    "product_id": "sku-1002",
+    "name": "Mechanical Keyboard",
+    "category": "Accessories",
+    "brand": "KeyPro",
+    "price": 59.99,
+    "stock_quantity": 80
+  },
+  {
+    "product_id": "sku-1003",
+    "name": "27in Monitor",
+    "category": "Monitors",
+    "brand": "ViewMax",
+    "price": 199.0,
+    "stock_quantity": 30
+  }
+]

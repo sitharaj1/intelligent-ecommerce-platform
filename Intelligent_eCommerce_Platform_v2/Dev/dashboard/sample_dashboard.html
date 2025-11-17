@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intelligent eCommerce Platform – Sample Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <h1 class="mb-4">Intelligent eCommerce Platform – Sample Dashboard</h1>
+
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Total Revenue (Latest Day)</h6>
+            <h3>$95.49</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Total Orders</h6>
+            <h3>2</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Conversion Rate</h6>
+            <h3>2.8%</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Anomalies (Dummy)</h6>
+            <h3>3</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <div class="card-header">Daily Revenue</div>
+          <div class="card-body">
+            <canvas id="revenueChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <div class="card-header">Sessions Funnel (Static)</div>
+          <div class="card-body">
+            <canvas id="funnelChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const revenueCtx = document.getElementById('revenueChart');
+    new Chart(revenueCtx, {
+      type: 'line',
+      data: {
+        labels: ['2025-01-01', '2025-01-02'],
+        datasets: [{
+          label: 'Total Revenue ($)',
+          data: [44.25, 95.49]
+        }]
+      }
+    });
+
+    const funnelCtx = document.getElementById('funnelChart');
+    new Chart(funnelCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Sessions', 'Product Views', 'Add to Cart', 'Checkout', 'Purchases'],
+        datasets: [{
+          label: 'Count',
+          data: [1000, 700, 400, 200, 60]
+        }]
+      }
+    });
+  </script>
+</body>
+</html>

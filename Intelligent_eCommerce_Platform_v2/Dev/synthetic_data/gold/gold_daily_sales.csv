@@ -1,0 +1,3 @@
+date,total_revenue,total_orders,avg_order_value,unique_customers,refunds,conversion_rate
+2025-01-01,44.25,1,44.25,1,0,2.1
+2025-01-02,95.49,2,47.74,2,1,2.8

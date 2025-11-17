@@ -1,0 +1,23 @@
+[
+  {
+    "customer_id": "u_101",
+    "name": "Alice Smith",
+    "email": "alice@example.com",
+    "signup_date": "2024-10-01",
+    "country": "UK"
+  },
+  {
+    "customer_id": "u_205",
+    "name": "Bob Lee",
+    "email": "bob@example.com",
+    "signup_date": "2024-11-15",
+    "country": "UK"
+  },
+  {
+    "customer_id": "u_305",
+    "name": "Charlie Patel",
+    "email": "charlie@example.com",
+    "signup_date": "2024-09-20",
+    "country": "US"
+  }
+]

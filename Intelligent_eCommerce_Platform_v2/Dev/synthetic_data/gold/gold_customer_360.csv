@@ -1,0 +1,4 @@
+customer_id,lifetime_value,num_orders,avg_order_value,days_since_last_purchase,preferred_category,churn_score
+u_101,44.25,1,44.25,10,Accessories,0.2
+u_205,59.99,1,59.99,9,Accessories,0.3
+u_305,35.5,1,35.5,8,Monitors,0.6

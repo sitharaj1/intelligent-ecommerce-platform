@@ -1,0 +1,4 @@
+order_id,customer_id,order_date,total_amount,status
+o_1001,u_101,2025-01-01,44.25,completed
+o_1002,u_205,2025-01-02,59.99,completed
+o_1003,u_305,2025-01-02,35.5,refunded
