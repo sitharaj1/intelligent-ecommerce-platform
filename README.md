@@ -1,30 +1,30 @@
-# 🛍️ Intelligent eCommerce Platform  
-### End-to-End Data Engineering + Analytics + ML Project
+## 📌 About This Project
 
-This repository contains a full **data engineering and machine learning project** simulating an intelligent eCommerce analytics platform.  
-The goal is to demonstrate skills across:
+This project replicates an **industry-style data platform** for an eCommerce business.  
+It shows how raw operational logs and transactional data can be transformed into trusted analytics datasets and machine-learning features.
 
-- **Data Ingestion** (Sentinel-style logs)
-- **Medallion Architecture** (Bronze → Silver → Gold)
-- **ETL Pipelines** in Python
-- **Data Modeling** for analytics
-- **Serving Layer** using SQLite
-- **Machine Learning** (customer churn scoring)
-- **Dashboarding** using Bootstrap + Chart.js
+The pipeline includes:
 
-All data is **synthetic** and safe for public GitHub use.  
-This project is designed to be portfolio-ready and useful for interviews, assignments, and showcasing real-world engineering workflows.
----
+1. **Sentinel-style Logs (raw)**  
+   Web events, failed logins, product views, cart actions.
 
-## 🚀 Project Highlights
+2. **Medallion Architecture**  
+   - **Bronze** → raw JSON files  
+   - **Silver** → cleaned, normalized CSV tables  
+   - **Gold** → aggregated business metrics (daily sales, customer 360)
 
-✔ Sentinel-style event logs  
-✔ Synthetic eCommerce datasets  
-✔ Bronze / Silver / Gold data layering  
-✔ Python ETL pipelines  
-✔ Automated DB loading (SQLite)  
-✔ Customer churn ML model  
-✔ HTML dashboard (Bootstrap + Chart.js)  
-✔ Recruiter-friendly structure
+3. **ETL Scripts (Python)**  
+   Scripts under `Dev/scripts/`:
+   - `etl_transform.py` → from Bronze to Silver/Gold CSVs  
+   - `load_to_db.py` → loads Silver/Gold data into a SQLite DB  
 
----
+4. **Serving Database (SQLite)**  
+   `Dev/db/intelligent_ecommerce.db` holds:
+   - `silver_orders`, `silver_products`, `silver_events`
+   - `gold_daily_sales`, `gold_customer_360`
+
+5. **Machine Learning**  
+   A small churn-style classifier trained from `gold_customer_360.csv` in `Dev/ml/train_churn_model.py`.
+
+6. **Dashboard Prototype**  
+   `Dev/dashboard/sample_dashboard.html` is a static HTML dashboard built with Bootstrap + Chart.js.
