@@ -28,3 +28,8 @@ The pipeline includes:
 
 6. **Dashboard Prototype**  
    `Dev/dashboard/sample_dashboard.html` is a static HTML dashboard built with Bootstrap + Chart.js.
+
+References:
+
+https://learn.microsoft.com/en-us/azure/sentinel/sample-workspace-designs
+https://techcommunity.microsoft.com/blog/microsoftsentinelblog/new-ingestion-sampledata-as-a-service-solution-for-a-great-demos-and-simulation/3598500
